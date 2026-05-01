@@ -18,7 +18,3 @@ def get_wingo():
         })
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-
-# Penting untuk Vercel
-def handler(request):
-    return app(request)
